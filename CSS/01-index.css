@@ -43,7 +43,7 @@ a {
 
 p {
     word-spacing: 2px;
-    color: rgb(196, 193, 193);
+    color: #B3B3B3;
 }
 
 .logo {
@@ -223,11 +223,11 @@ p {
 .movie-date {
     display: flex;
     gap: 10px;
-    font-weight: 100;
+    color: #B3B3B3;
 }
 
 .why-watchwave {
-    background: #0b0b0b;
+    background: #0B0B0B;
 }
 
 .why-watchwave .container {
@@ -267,7 +267,7 @@ p {
 .feature-card:hover {
     transform: translateY(-10px);
     border-color: #E50914;
-    box-shadow: 0 0 20px rgba(229, 9, 20, .3);
+    box-shadow: 0 0 10px red;
 }
 
 .feature-card i {
@@ -293,7 +293,7 @@ footer {
 }
 
 .footer-logo h2 {
-    color: rgb(255, 0, 0);
+    color: red;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 40px 0px 0px 0px;
@@ -324,7 +324,7 @@ footer ul li {
 }
 
 footer a {
-    color: rgb(196, 193, 193);
+    color: #B3B3B3;
     font-weight: 600;
 
 }

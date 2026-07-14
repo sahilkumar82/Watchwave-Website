@@ -65,7 +65,7 @@ body {
 }
 
 p {
-    color: rgb(196, 193, 193);
+    color: #B3B3B3;
     word-spacing: 2px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -149,7 +149,7 @@ details[open] .icon {
     padding: 50px 25px;
     margin: 80px 0px 100px 0px;
     border: 1px solid #E50914;
-    box-shadow: 0 0 20px rgba(229, 9, 20);
+    box-shadow: 0 0 10px red;
 }
 
 .form-content h2 {
@@ -209,7 +209,7 @@ footer {
 }
 
 .footer-logo h2 {
-    color: rgb(255, 0, 0);
+    color: red;
     font-size: 1.8rem;
     font-weight: 600;
     padding: 40px 0px 0px 0px;
@@ -240,7 +240,7 @@ footer ul li {
 }
 
 footer a {
-    color: rgb(196, 193, 193);
+    color: #B3B3B3;
     font-weight: 600;
     text-decoration: none;
 
@@ -282,7 +282,6 @@ footer a:hover {
     }
 
     .footer-item {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -317,7 +316,6 @@ footer a:hover {
     }
 
     .footer-item {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
