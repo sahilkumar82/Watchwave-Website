@@ -22,6 +22,20 @@ body {
     color: red;
     font-size: 2rem;
     font-weight: 600;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar-content {
@@ -29,6 +43,20 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar button {
@@ -161,6 +189,13 @@ h1 span {
     margin: 80px auto;
     border-radius: 10px;
     width: 100%;
+    transition: .3s;
+}
+
+.articles-content:hover {
+    border: 1px solid #E50914;
+    box-shadow: 0 0 10px red;
+
 }
 
 .articles-topic {
