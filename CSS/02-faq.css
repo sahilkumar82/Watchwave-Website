@@ -26,6 +26,20 @@ body {
     color: red;
     font-size: 2rem;
     font-weight: 600;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar-content {
@@ -33,6 +47,20 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .navbar button {
@@ -54,6 +82,21 @@ body {
     font-weight: 600;
     color: white;
     margin: 40px 0px 5px 0px;
+    opacity: 0;
+    animation: slideTop .6s ease forwards;
+    animation-delay: .5s;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .heading span {
@@ -62,6 +105,9 @@ body {
 
 .FAQ p {
     max-width: 550px;
+    opacity: 0;
+    animation: slideTop .6s ease forwards;
+    animation-delay: .7s;
 }
 
 p {
@@ -148,6 +194,10 @@ details[open] .icon {
     border-radius: 10px;
     padding: 50px 25px;
     margin: 80px 0px 100px 0px;
+    transition: .3s;
+}
+
+.form-content:hover {
     border: 1px solid #E50914;
     box-shadow: 0 0 10px red;
 }
