@@ -7,6 +7,7 @@
 body {
     font-family: auto;
     background-color: #000;
+    color: #fff;
 }
 
 .container {
@@ -61,7 +62,7 @@ body {
 
 .navbar button {
     background: transparent;
-    color: white;
+    color: #fff;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
@@ -75,14 +76,27 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: white;
-
 }
 
 .search h1 {
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 15px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .search-box {
@@ -100,7 +114,22 @@ body {
     background: transparent;
     border: 1px solid gray;
     border-radius: 3px;
-    color: white;
+    color: #fff;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .8s;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .search-box input:focus {
@@ -114,10 +143,17 @@ body {
     top: 15px;
     left: 20px;
     font-size: larger;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .search-box-items {
     margin: 10px 0px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .8s;
+
 }
 
 .search-box-items span a {
@@ -125,13 +161,12 @@ body {
     text-decoration: none;
 }
 
-.category {
-    color: white;
-}
-
 .category h2 {
     margin-bottom: 25px;
     font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .category .category-box {
@@ -147,10 +182,12 @@ body {
     padding: 35px 25px;
     transition: .3s;
     border: 1px solid rgb(8, 11, 11);
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
 }
 
 .category-boxes:hover {
-    transform: translateY(-10px);
     border-color: #E50914;
     box-shadow: 0 0 10px red;
 }
@@ -173,10 +210,6 @@ h1 span {
     color: red;
 }
 
-.searches-articles {
-    color: white;
-}
-
 .articles-content h3 {
     font-size: 3rem;
     margin-bottom: 30px;
@@ -189,13 +222,12 @@ h1 span {
     margin: 80px auto;
     border-radius: 10px;
     width: 100%;
-    transition: .3s;
+    border: 1px solid #262626;
 }
 
 .articles-content:hover {
-    border: 1px solid #E50914;
+    border-color: #E50914;
     box-shadow: 0 0 10px red;
-
 }
 
 .articles-topic {
@@ -212,10 +244,6 @@ h1 span {
     font-size: 1.2rem;
     list-style: none;
     color: #B3B3B3;
-}
-
-.assistance {
-    color: white;
 }
 
 .assistance .container {
@@ -248,7 +276,7 @@ h1 span {
     height: 40px;
     background-color: red;
     border: 1px solid red;
-    color: white;
+    color: #fff;
     border-radius: 3px;
     transition: .3s;
 }
@@ -273,7 +301,7 @@ footer {
 .footer-logo p {
     margin-bottom: 50px;
     font-size: 1rem;
-    color: white;
+    color: #fff;
 }
 
 .footer-item {
@@ -303,7 +331,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: white;
+    color: #fff;
 }
 
 @media(max-width:991px) {

@@ -7,6 +7,7 @@
 body {
     font-family: auto;
     background-color: rgb(8, 11, 11);
+    color: #fff;
 }
 
 .container {
@@ -60,7 +61,6 @@ body {
 
 .heading {
     font-size: 2rem;
-    color: white;
     font-weight: 600;
 }
 
@@ -85,8 +85,8 @@ body {
 
 .input-box input:focus {
     outline: none;
-    border-color: white;
-    box-shadow: 0 0 10px white;
+    border-color: #fff;
+    box-shadow: 0 0 10px #fff;
 }
 
 .form-content button {
@@ -94,7 +94,7 @@ body {
     height: 50px;
     margin: 30px 0px 20px 0px;
     background-color: red;
-    color: white;
+    color: #fff;
     border: 1px solid red;
     font-size: 1.2rem;
     font-weight: 600;
@@ -160,7 +160,7 @@ footer {
 .footer-logo p {
     margin-bottom: 50px;
     font-size: 1rem;
-    color: white;
+    color: #fff;
 }
 
 .footer-item {
@@ -189,7 +189,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: white;
+    color: #fff;
 }
 
 @media(max-width:768px) {

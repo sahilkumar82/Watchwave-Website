@@ -7,6 +7,7 @@
 body {
     font-family: auto;
     background-color: rgb(8, 11, 11);
+    color: #fff;
 
 }
 
@@ -84,7 +85,8 @@ p {
 }
 
 .navbar-nav {
-    padding: 0px 0px 0px 15px;
+    padding: 0px 0px 0px 30px;
+    gap: 25px;
 }
 
 .nav-link {
@@ -128,7 +130,7 @@ p {
 
 .navbar button {
     background: transparent;
-    color: white;
+    color: #fff;
     border: none;
     cursor: pointer;
     font-size: larger;
@@ -136,7 +138,7 @@ p {
 
 .navbar-content a {
     background-color: red;
-    color: white;
+    color: #fff;
     border: 1px solid red;
     border-radius: 3px;
     padding: 4px 12px;
@@ -154,7 +156,6 @@ p {
     display: flex;
     align-items: center;
     height: 100vh;
-    color: white;
 }
 
 .home-content {
@@ -225,7 +226,7 @@ p {
 
 .watch {
     background: red;
-    color: white;
+    color: #fff;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: .8s;
@@ -250,8 +251,8 @@ p {
 
 .info {
     border: 2px solid white;
-    background: white;
-    color: black;
+    background: #fff;
+    color: #000;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: .8s;
@@ -265,7 +266,6 @@ p {
 .heading {
     font-size: 35px;
     font-weight: 600;
-    color: white;
     margin: 40px 0px 10px 0px;
 }
 
@@ -282,7 +282,6 @@ p {
 }
 
 .movie {
-    color: white;
     margin: 26px 0px;
     cursor: pointer;
     transition: .5s;
@@ -306,8 +305,8 @@ p {
 }
 
 .movie img:hover {
-    border: 2px solid white;
-    box-shadow: 0 0 10px white;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #fff;
 }
 
 .movie-name {
@@ -335,7 +334,6 @@ p {
 
 .section-title h2 {
     font-size: 35px;
-    color: white;
     font-weight: 600;
 }
 
@@ -371,7 +369,6 @@ p {
 }
 
 .feature-card h3 {
-    color: white;
     margin-bottom: 15px;
     font-size: 24px;
 }
@@ -396,7 +393,7 @@ footer {
 .footer-logo p {
     margin-bottom: 50px;
     font-size: 1rem;
-    color: white;
+    color: #fff;
 }
 
 .footer-item {
@@ -425,13 +422,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: white;
+    color: #fff;
 }
 
 .footer-social h3 {
     margin: 40px 0px 20px 0px;
     font-size: 22px;
-    color: white;
 }
 
 
@@ -444,7 +440,7 @@ footer a:hover {
     width: 45px;
     height: 45px;
     background: #171717;
-    color: white;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,12 +463,16 @@ footer hr {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: #fff;
     font-size: 15px;
 }
 
 
 @media(max-width:991px) {
+    .navbar-nav {
+        padding: 0px 0px 0px 15px;
+    }
+
     .feature-container {
         grid-template-columns: repeat(2, 1fr);
     }
