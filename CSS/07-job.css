@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: auto;
+    background-color: rgb(8, 11, 11);
+    color: #fff;
+}
+
+.container {
+    padding-inline: 20px;
+}
+
+header {
+    background-color: #000;
+}
+
+.navbar .container {
+    padding: 10px 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    word-spacing: 2px;
+    color: #B3B3B3;
+    font-size: 17px;
+}
+
+.navbar-logo {
+    color: red;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.navbar-content {
+    max-width: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.navbar button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.careers h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    max-width: 270px;
+    margin: 40px 0px 5px 0px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
+
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1 span {
+    color: red;
+}
+
+.careers p {
+    max-width: 525px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .8s;
+    margin-bottom: 20px;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+form {
+    position: relative;
+    max-width: 550px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .8s;
+}
+
+form button {
+    position: absolute;
+    height: 35px;
+    top: 5px;
+    right: 10px;
+    max-width: 110px;
+    width: 100%;
+    background: red;
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+form button:hover {
+    background: #c40000;
+    border-color: #c40000;
+}
+
+form input {
+    height: 45px;
+    max-width: 550px;
+    width: 100%;
+    padding: 0px 130px 0px 15px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #141414;
+    border: 1px solid #262626;
+
+}
+
+form input:focus {
+    outline-style: none;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, .35);
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.department-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.department-cards {
+    padding: 35px 25px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
+
+}
+
+.department-cards:hover {
+    border-color: #E50914;
+    box-shadow: 0 0 10px red;
+}
+
+.department h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin: 90px 0px 30px 0px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
+}
+
+.department-cards p {
+    margin-bottom: 25px;
+}
+
+.department-cards i {
+    font-size: 45px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.department-cards a {
+    border: 1px solid #383737;
+    background: #383737;
+    padding: 5px 12px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.department-cards a:hover {
+    background-color: red;
+    border-color: red;
+    color: #fff;
+}
+
+.openings-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.openings-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #141414;
+    border: 1px solid #262626;
+    border-radius: 5px;
+}
+
+.openings-cards:hover {
+    border-color: #E50914;
+    box-shadow: 0 0 10px red;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin: 90px 0px 10px 0px;
+}
+
+.heading p {
+    margin-bottom: 32px;
+}
+
+.cards-content span {
+    font-size: .9rem;
+    margin-right: 15px;
+}
+
+.cards-content i {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.openings-cards a {
+    color: #fff;
+    background: red;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 3px;
+    transition: .3s;
+    max-width: 100px;
+    width: 100%;
+}
+
+.openings-cards a:hover {
+    background-color: #E50914;
+    border-color: #E50914;
+}
+
+.perks-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 90px;
+}
+
+.perks-cards {
+    padding: 35px 25px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+}
+
+.perks-cards:hover {
+    transform: translateY(-10px);
+    border-color: #E50914;
+    box-shadow: 0 0 10px red;
+}
+
+.perks h2 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin: 90px 0px 30px 0px;
+}
+
+.perks-cards i {
+    font-size: 45px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    padding: 40px 0px 80px 0px;
+}
+
+.footer-logo h2 {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 40px 0px 0px 0px;
+}
+
+.footer-logo p {
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+footer ul li {
+    padding: 10px 0px;
+    list-style: none;
+
+}
+
+footer a {
+    color: #B3B3B3;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+@media(max-width:991px) {}
+
+@media(max-width:768px) {
+    .careers h1 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .department h2,
+    .heading h2,
+    .perks h2 {
+        font-size: 1.7rem;
+    }
+
+
+    .department-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perks-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:480px) {
+    .navbar-logo {
+        font-size: 1.5rem;
+
+    }
+
+    .navbar-content {
+        max-width: 65px;
+        width: 100%;
+    }
+
+    .navbar button {
+        font-size: 1rem;
+
+    }
+
+    .department-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-content h5 {
+        font-size: 1.1rem;
+    }
+
+    .perks-card {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-item {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        font-size: 1.5rem;
+    }
+
+    .footer-logo p {
+        margin-bottom: 50px;
+        font-size: .9rem;
+    }
+
+    footer ul li {
+        padding: 7px 0px;
+    }
+
+    footer a {
+        font-size: .8rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+
+}
