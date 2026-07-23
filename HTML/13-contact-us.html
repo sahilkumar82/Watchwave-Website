@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="../Image/logo.png">
+    <link rel="stylesheet" href="../CSS/13-contact-us.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <div class="navbar-logo">
+                    WATCHWAVE
+                </div>
+
+                <div class="navbar-content">
+                    <button type="button" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" aria-label="Profile"><i class="fa-solid fa-circle-user"></i></button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h1>Contact <span>Us</span></h1>
+                <p>Have a question or need assistance with your subscription? Our specials support team is available
+                    around the clock to ensure your cinematic experience is never interrupted.</p>
+            </div>
+        </section>
+        <section class="contact-ways">
+            <div class="container">
+                <div class="ways">
+                    <div class="ways-items">
+                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                        <h4>Live chat</h4>
+                        <p>Chat with our experts for immediate support regarding streaming issues.
+                        </p>
+                        <button type="button">Start Live Chat</button>
+                    </div>
+                    <div class="ways-items">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <h4>Call Us</h4>
+                        <p>prefer speaking to a human? Our lines are open 24/7 for premium members.</p>
+                        <button type="button">Request a Callback</button>
+                    </div>
+                    <div class="ways-items">
+                        <div class="icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h4>Help Center</h4>
+                        <p>Browse our extensive library of FAQs, tutorials, and troubleshooting guides.</p>
+                        <button type="button">Visit Help Center</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="message">
+            <div class="container">
+                <div class="item">
+                    <div class="items">
+                        <h2>Send us a message</h2>
+                        <p>Tell us about your experience or report a bug. We typically respond within 2 hours.</p>
+                        <form>
+                            <div class="input-name">
+                                <div class="name">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" name="name" id="name" aria-label="text" placeholder="Enter name"
+                                        required>
+                                </div>
+                                <div class="account">
+                                    <label for="email">Account Email</label>
+                                    <input type="email" name="email" id="email" aria-label="email"
+                                        placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="subject">
+                                <label for="subject">Subject
+                                </label><br>
+                                <select name="subject" id="subject" required>
+                                    <option value="" selected disabled>
+                                        Select Subject
+                                    </option>
+                                    <option value="Technical Issue">Technical Issue</option>
+                                    <option value="Billing & subscription">Billing & subscription</option>
+                                    <option value="Content Request">Content Request</option>
+                                    <option value="Feedback">Feedback</option>
+                                </select><br>
+                                <label for="Message">Message</label><br>
+                                <textarea name="Message" id="Message" placeholder="How can we help?"
+                                    required></textarea>
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="items">
+                        <img src="../Image/banner.jpg" alt="banner" class="image-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h2>WATCHWAVE</h2>
+                <p>
+                    Stream unlimited movies, TV shows, and anime anytime, anywhere with WatchWave.
+                </p>
+            </div>
+            <div class="footer-item">
+                <ul>
+                    <li><a href="../HTML/02-faq.html">FAQ</a></li>
+                    <li><a href="../HTML/06-investor.html">Investor Relations</a></li>
+                    <li><a href="../HTML/11-cookie.html">Cookie Preference</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="../HTML/03-help-center.html">Help center</a></li>
+                    <li><a href="../HTML/07-job.html">Jobs</a></li>
+                    <li><a href="../HTML/12-corporate.html">Corporate Information</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="../HTML/04-sign-in.html">Account</a></li>
+                    <li><a href="../HTML/08-way-to-watch.html">Way to watch</a></li>
+                             <li><a href="../HTML/12-corporate.html">Corporate Information</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../HTML/05-media-center.html">Media center</a></li>
+                    <li><a href="../HTML/09-term-of-use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
