@@ -14,12 +14,19 @@ body {
     padding-inline: 20px;
 }
 
-header {
-    background-color: #000;
+a {
+    text-decoration: none;
 }
 
-.navbar .container {
-    padding: 10px 20px;
+p {
+    word-spacing: 4px;
+    color: #B3B3B3;
+    font-size: 17px;
+}
+
+.navbar {
+    height: 90px;
+    background-color: #000;
 
 }
 
@@ -72,11 +79,11 @@ header {
     cursor: pointer;
 }
 
-.overview h1 {
+.heading h1 {
     font-size: 3.5rem;
     font-weight: 600;
     max-width: 600px;
-    margin: 90px 0px 20px 0px;
+    margin: 40px 0px 20px 0px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .8s;
@@ -99,7 +106,7 @@ h1 span {
     color: red;
 }
 
-.valuation-box {
+.valuation-container {
     background: #141414;
     border: 1px solid #262626;
     display: flex;
@@ -126,20 +133,20 @@ h1 span {
     }
 }
 
-.valuation-boxes {
+.valuation-box {
     display: flex;
     flex-direction: column;
 }
 
-.valuation-boxes span {
+.valuation-box span {
     font-size: 40px;
 }
 
-.valuation-boxes strong {
+.valuation-box strong {
     font-size: .9rem;
 }
 
-.download {
+.download-report {
     display: flex;
     gap: 15px;
     margin-top: 20px;
@@ -159,8 +166,8 @@ h1 span {
 }
 
 .report:hover {
-    background-color: #E50914;
-    border-color: #E50914;
+    background-color: #cb0909;
+    border-color: #cb0909;
 
 }
 
@@ -179,12 +186,12 @@ h1 span {
 }
 
 .letter:hover {
-    background-color: #E50914;
-    border-color: #E50914;
+    background-color: #cb0909;
+    border-color: #cb0909;
 
 }
 
-.highlight-card {
+.highlight-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -194,7 +201,7 @@ h1 span {
     animation-delay: .8s;
 }
 
-.highlight-cards {
+.highlight-card {
     display: flex;
     flex-direction: column;
     padding: 35px 25px;
@@ -205,77 +212,72 @@ h1 span {
 
 }
 
-.highlight-cards:hover {
+.highlight-card:hover {
     border-color: #E50914;
     box-shadow: 0 0 10px red;
 }
 
-.highlight-cards strong {
+.highlight-card strong {
     margin-bottom: 20px;
 }
 
-.highlight-cards span {
+.highlight-card span {
     font-size: 50px;
 }
 
-.valuation-boxes strong:hover,
-.valuation-boxes span:hover,
-.highlight-cards strong:hover,
-.highlight-cards span:hover,
-.highlight-cards p:hover {
+.valuation-box strong:hover,
+.valuation-box span:hover,
+.highlight-card strong:hover,
+.highlight-card span:hover,
+.highlight-card p:hover {
     color: red;
 }
 
-.highlight-cards p {
+.highlight-card p {
     margin-top: -10px;
     margin-bottom: 0px;
 }
 
-.heading h2 {
+.financial h2 {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .8s;
 }
 
-.heading p {
+.financial p {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: .8s;
 }
 
-.heading h2,
+.financial h2,
 .event h2 {
     font-weight: 600;
-    margin: 90px 0px 20px 0px;
+    font-size: 35px;
+    margin: 90px 0px 10px 0px;
+}
+
+.event-container {
+    margin-bottom: 100px;
 }
 
 .event-card {
-    margin-bottom: 90px;
-}
-
-.event-cards {
     background: #141414;
     border: 1px solid #262626;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
-    height: 100px;
     padding: 20px;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.event-cards:hover {
-    border-color: #E50914;
-    box-shadow: 0 0 10px red;
-}
-
-.cards-detail span {
+.card-detail span {
     font-size: .9rem;
     margin-right: 15px;
 }
 
-.cards-button button {
+.card-button button {
     padding: 5px 10px;
     background-color: red;
     border: 1px solid red;
@@ -283,14 +285,14 @@ h1 span {
     color: #fff;
 }
 
-.cards-button button:hover {
-    background-color: #E50914;
-    border-color: #E50914;
+.card-button button:hover {
+    background-color: #cb0909;
+    border-color: #cb0909;
 }
 
 footer {
     background-color: #000;
-    padding: 40px 0px 80px 0px;
+    padding: 40px 0px 120px 0px;
 }
 
 .footer-logo h2 {
@@ -337,7 +339,7 @@ footer a:hover {
 
 @media(max-width:768px) {
 
-    .overview h1 {
+    .heading h1 {
         font-size: 2.3rem;
     }
 
@@ -350,7 +352,7 @@ footer a:hover {
         font-size: 1.7rem;
     }
 
-    .highlight-card {
+    .highlight-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -368,6 +370,7 @@ footer a:hover {
     .navbar-content {
         max-width: 65px;
         width: 100%;
+        margin: 5px 0px 0px 5px;
     }
 
     .navbar button {
@@ -375,20 +378,26 @@ footer a:hover {
 
     }
 
-    .valuation-boxes span {
+    .valuation-box span {
         font-size: 25px;
     }
 
-    .download {
+    .download-report {
         flex-direction: column;
     }
 
-    .highlight-card {
+    .highlight-container {
         grid-template-columns: 1fr;
     }
 
-    .cards-detail h5 {
+    .card-detail h5 {
         font-size: 1.1rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
     .footer-item {

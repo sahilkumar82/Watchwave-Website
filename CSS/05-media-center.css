@@ -15,17 +15,15 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    background-color: #000;
-}
-
 .container {
     padding-inline: 20px;
 }
 
-.navbar .container {
-    padding: 10px 20px;
+.navbar {
+    height: 90px;
+    background-color: #000;
 }
+
 
 a {
     text-decoration: none;
@@ -139,11 +137,11 @@ p {
 }
 
 .navbar-content a:hover {
-    background: #c40000;
-    border-color: #c40000;
+    background: #cb0909;
+    border-color: #cb0909;
 }
 
-.corporate h1 {
+.heading h1 {
     max-width: 610px;
     font-size: 3.5rem;
     font-weight: 600;
@@ -166,11 +164,11 @@ p {
     }
 }
 
-.corporate h1 span {
+h1 span {
     color: red;
 }
 
-.corporate p {
+.heading p {
     max-width: 545px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -192,7 +190,7 @@ p {
 .press-releases h2,
 .media-kit h2 {
     font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 35px;
     margin: 90px 0px 30px 0px;
 }
 
@@ -257,13 +255,13 @@ p {
     margin: 20px 0px 10px 0px;
 }
 
-.media-card {
+.media-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.media-cards {
+.media-card {
     background: #141414;
     padding: 35px 25px;
     border-radius: 10px;
@@ -272,13 +270,13 @@ p {
     text-align: center;
 }
 
-.media-cards:hover {
+.media-card:hover {
     transform: translateY(-10px);
     border-color: #E50914;
     box-shadow: 0 0 10px red;
 }
 
-.media-cards img {
+.media-image img {
     width: 100px;
     height: 100px;
     border-radius: 5px;
@@ -286,18 +284,18 @@ p {
 
 }
 
-.media-cards h4 {
+.media-content h4 {
     margin: 10px 0px 5px 0px;
     font-size: 1.3rem;
 }
 
-.media-cards h5 {
+.media-content h5 {
     font-size: .9rem;
     color: pink;
 
 }
 
-.media-cards p {
+.media-content p {
     margin: 0;
     font-size: 16px;
     margin-top: 20px;
@@ -309,7 +307,7 @@ p {
     background-color: #000;
     border: 1px solid #262626;
     border-radius: 10px;
-    margin: 90px 0px 90px 0px;
+    margin: 100px 0px 90px 0px;
 }
 
 .left-assets {
@@ -380,7 +378,7 @@ p {
 
 footer {
     background-color: #000;
-    padding: 40px 0px 80px 0px;
+    padding: 40px 0px 120px 0px;
 }
 
 .footer-logo h2 {
@@ -434,7 +432,7 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .media-card {
+    .media-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -442,7 +440,7 @@ footer a:hover {
 }
 
 @media(max-width:768px) {
-    .corporate h1 {
+    .heading h1 {
         font-size: 2.3rem;
     }
 
@@ -459,7 +457,7 @@ footer a:hover {
         font-size: 24px;
     }
 
-    .media-card {
+    .media-container {
         display: grid;
         grid-template-columns: 1fr;
     }
