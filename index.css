@@ -71,16 +71,6 @@ p {
     }
 }
 
-.navbar-toggler-icon {
-    filter: brightness(0) invert(1);
-    opacity: 0;
-    animation: slideRight 2s ease forwards;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
 .navbar-nav {
     padding: 0px 0px 0px 30px;
     gap: 25px;
@@ -138,7 +128,7 @@ p {
     color: #fff;
     border: 1px solid red;
     border-radius: 3px;
-    padding: 4px 12px;
+    padding: 2px 10px;
     font-size: 0.9rem;
     font-weight: 600;
     transition: .3s;
@@ -323,7 +313,7 @@ p {
 
 .section-title {
 
-    margin: 30px auto 30px auto;
+    margin: 50px auto 30px auto;
 }
 
 .section-title h2 {
@@ -334,7 +324,7 @@ p {
 .feature-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 100px;
 }
 
@@ -507,16 +497,19 @@ footer hr {
     }
 
     .navbar-content {
-        max-width: 154px;
+        max-width: 130px;
         width: 100%
     }
 
     .navbar button {
         font-size: medium;
     }
-
+    .home-content {
+    max-width: 650px;
+    text-align: center;
+}
     .home-content h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .home-content p {
@@ -526,7 +519,9 @@ footer hr {
     .home-content .buttons a {
         padding: 10px 15px;
     }
-
+    .buttons{
+        justify-content:center;
+    }
     .movie-image {
         width: 150px;
         height: 200px;
@@ -554,7 +549,7 @@ footer hr {
     }
 
     footer a {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     footer p {
@@ -563,9 +558,6 @@ footer hr {
 }
 
 @media(max-width:402px) {
-    .navbar-content {
-        margin: 10px 0px 0px 18px;
-    }
 
     .buttons a {
         font-size: 14px;

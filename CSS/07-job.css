@@ -236,7 +236,7 @@ form input:focus {
     padding: 5px 12px;
     border-radius: 3px;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     transition: .3s;
 }
 
@@ -275,12 +275,14 @@ form input:focus {
 .openings-card a {
     color: #fff;
     background: red;
-    padding: 5px 10px;
+    padding: 5px;
     border: 1px solid red;
     border-radius: 3px;
     transition: .3s;
     max-width: 100px;
     width: 100%;
+    text-align: center;
+
 }
 
 .openings-card a:hover {
@@ -367,7 +369,7 @@ footer a:hover {
 
 @media(max-width:768px) {
     .heading h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     p {
@@ -377,7 +379,7 @@ footer a:hover {
     .department h2,
     .heading h2,
     .perks h2 {
-        font-size: 1.7rem;
+        font-size: 30px;
     }
 
 
@@ -414,9 +416,19 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
+    .department h2,
+    .openings h2,
+    .perks h2 {
+        text-align: center;
+    }
+
     .department-card i,
     .perks-card i {
         font-size: 35px;
+    }
+
+    .openings-card a {
+        font-size: 14px;
     }
 
     .card-content {
@@ -427,11 +439,13 @@ footer a:hover {
     .card-content h5 {
         font-size: 1.1rem;
     }
-      .openings-card {
+
+    .openings-card {
         flex-direction: column;
         text-align: center;
-        gap:20px;
-      }
+        gap: 20px;
+    }
+
     .footer-item {
         grid-template-columns: 1fr;
     }
@@ -450,7 +464,7 @@ footer a:hover {
     }
 
     footer a {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     footer p {

@@ -369,7 +369,7 @@ footer a:hover {
 
 @media(max-width:768px) {
     .heading h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     p {
@@ -383,7 +383,7 @@ footer a:hover {
     .tv h2,
     .computer h2,
     .mobile h2 {
-        font-size: 1.7rem;
+        font-size: 26px;
     }
 
     .computer-container {
@@ -442,7 +442,7 @@ footer a:hover {
     }
 
     footer a {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     footer p {

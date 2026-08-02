@@ -156,7 +156,7 @@ h1 span {
 }
 
 .report {
-    max-width: 250px;
+    max-width: 260px;
     width: 100%;
     height: 40px;
     background-color: red;
@@ -176,7 +176,7 @@ h1 span {
 }
 
 .letter {
-    max-width: 150px;
+    max-width: 160px;
     width: 100%;
     height: 40px;
     background-color: red;
@@ -222,7 +222,7 @@ h1 span {
 }
 
 .highlight-card span {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .valuation-box strong:hover,
@@ -234,7 +234,7 @@ h1 span {
 }
 
 .highlight-card p {
-    margin-top: -10px;
+    margin-top: -5px;
     margin-bottom: 0px;
 }
 
@@ -378,8 +378,12 @@ footer a:hover {
 
     }
 
+    .valuation-box strong {
+        font-size: .8rem;
+    }
+
     .valuation-box span {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .download-report {
@@ -388,6 +392,17 @@ footer a:hover {
 
     .highlight-container {
         grid-template-columns: 1fr;
+    }
+
+    .financial .container {
+        text-align: center;
+    }
+
+    .event .container {
+        text-align: center;
+    }
+    .highlight-card span {
+        font-size: 40px;
     }
 
     .card-detail h5 {
@@ -418,6 +433,6 @@ footer a:hover {
     }
 
     footer a {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
