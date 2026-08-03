@@ -10,6 +10,11 @@ body {
     color: #fff;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     padding-inline: 20px;
 }
@@ -401,6 +406,7 @@ footer a:hover {
     .event .container {
         text-align: center;
     }
+
     .highlight-card span {
         font-size: 40px;
     }

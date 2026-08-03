@@ -10,6 +10,11 @@ body {
     color: #fff;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     padding-inline: 20px;
 }

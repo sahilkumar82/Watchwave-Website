@@ -504,10 +504,12 @@ footer hr {
     .navbar button {
         font-size: medium;
     }
+
     .home-content {
-    max-width: 650px;
-    text-align: center;
-}
+        max-width: 650px;
+        text-align: center;
+    }
+
     .home-content h1 {
         font-size: 40px;
     }
@@ -519,9 +521,11 @@ footer hr {
     .home-content .buttons a {
         padding: 10px 15px;
     }
-    .buttons{
-        justify-content:center;
+
+    .buttons {
+        justify-content: center;
     }
+
     .movie-image {
         width: 150px;
         height: 200px;

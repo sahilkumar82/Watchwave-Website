@@ -10,6 +10,11 @@ body {
     color: #fff;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     padding-inline: 20px;
 }
@@ -311,7 +316,7 @@ footer a:hover {
         font-size: 1rem;
     }
 
-    .question-items summary {
+    .question-item summary {
         font-size: 1.4rem;
     }
 
